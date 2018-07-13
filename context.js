@@ -17,14 +17,18 @@ var wall_e = new Robot("Wall-E");
 
 
 // #1
-console.log(  );
+console.log(add(0, 1));
 
 // #2  
-console.log(  );
+// voltron is an object, call is attached to functions
+console.log(add.call(bender,2,3));
 
 // #3
-console.log(  );
+
+console.log(add.apply(optimus, [20,30])); //apply passes in as an array, attaches to a function. 
 
 // #4
 
-console.log(  );
+let calculate = add.bind(bender)
+
+console.log(calculate("drinking", "beer"));
